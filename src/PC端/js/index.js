@@ -34,7 +34,7 @@ $(function() {
         let lastOptionIndex = option.findIndex(e => e + '.' === lastOption)
         if (lastOptionIndex === option.length - 1) return alert('选项已达上限!')
         let index = lastOptionIndex + 1
-        $(this).prev().append(`<li><input type="${$('#testType cite').text() === '多选题' ? 'checkbox' : 'radio'}" name="answers" id="${option[index]}"><label for="${option[index]}">${option[index]}.</label><input type="text" name="" id="" placeholder="选项, 点此编辑; 选中即设置为正确答案 (必填)">
+        $(this).prev().append(`<li><input type="${$('#testType cite').text() === '多选题' ? 'checkbox' : 'radio'}" name="answers" id="${option[index]}"><label for="${option[index]}">${option[index]}.</label><input type="text" placeholder="选项, 点此编辑; 选中即设置为正确答案 (必填)">
         </li>`)
         loadDelPic()
     })

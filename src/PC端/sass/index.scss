@@ -248,9 +248,9 @@ body {
             display: inline-block;
             width: 40px;
             padding: 0 20px 0 10px;
-        }
-        [type=text] {
-            width: 500px;
+            &+input {
+                width: 500px;
+            }
         }
         img {
             width: 15px;
