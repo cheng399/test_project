@@ -1,3 +1,7 @@
+import $ from 'jquery'
+import '@/PC端/js/sidebar'
+import '@/PC端/css/base.css'
+import '@/PC端/sass/index.scss'
 $(function() {
     // 下拉菜单
     $('.selects').on('click', 'div', function() {
@@ -6,8 +10,8 @@ $(function() {
         } else {
             $(this).addClass('active').siblings().removeClass('active')
         }
-        $('.selects ul').slideUp()
-        $('.selects .active ul').slideDown()
+        $('.selects ul').stop().slideUp()
+        $('.selects .active ul').stop().slideDown()
     })
     $('.selects').on('click', 'li', function() {
         $(this).parent().prev().text($(this).text())
