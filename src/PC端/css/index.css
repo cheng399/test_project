@@ -1,0 +1,289 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding-left: 150px;
+}
+
+#aside {
+  padding-top: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background-color: #2c3053;
+  border-top-right-radius: 30px;
+}
+
+#aside dl {
+  text-indent: 30px;
+  cursor: pointer;
+}
+
+#aside dt {
+  height: 50px;
+  line-height: 50px;
+  color: #999;
+}
+
+#aside dt.active {
+  color: #fff;
+  background-color: #5273e7;
+}
+
+#aside dd {
+  text-indent: 40px;
+  display: none;
+  color: #ccc;
+  height: 40px;
+  line-height: 40px;
+}
+
+#aside dd.active {
+  color: #fff;
+}
+
+#aside a {
+  color: inherit;
+}
+
+#main {
+  min-width: 1200px;
+  padding-top: 50px;
+  height: 100%;
+}
+
+#main .container {
+  display: none;
+  padding: 10px 20px 20px;
+  border: 20px solid #f5f6fb;
+  border-right: none;
+}
+
+#main .container .con-head {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #edecf1;
+  font-weight: 700;
+}
+
+#main .container .con-head i {
+  padding: 0 5px;
+}
+
+#main .container .con-head span {
+  cursor: pointer;
+}
+
+#categoryListings .add {
+  margin: 20px 0;
+}
+
+#categoryListings .add input {
+  width: 250px;
+  height: 30px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  text-indent: 15px;
+}
+
+#categoryListings .add button {
+  width: 50px;
+  height: 30px;
+  color: #fff;
+  background-color: #5a70de;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#categoryListings table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+#categoryListings table th {
+  border: 2px solid #eee;
+  height: 40px;
+  background-color: #f5f6fb;
+}
+
+#categoryListings table tr {
+  height: 35px;
+}
+
+#categoryListings table td:nth-child(-n+2) {
+  font-weight: 700;
+}
+
+#categoryListings table td {
+  border: 2px solid #eee;
+  text-indent: 10px;
+}
+
+#categoryListings table a {
+  padding: 3px;
+  color: #2237be;
+  cursor: pointer;
+}
+
+#itemList table {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+#itemList table th {
+  border: 2px solid #eee;
+  height: 40px;
+  background-color: #f5f6fb;
+}
+
+#itemList table tr {
+  height: 35px;
+}
+
+#itemList table td:nth-child(-n+4) {
+  font-weight: 700;
+}
+
+#itemList table td {
+  border: 2px solid #eee;
+  text-indent: 10px;
+}
+
+#itemList table a {
+  padding: 3px;
+  color: #2237be;
+  cursor: pointer;
+}
+
+#addItem .selects {
+  padding: 20px 0;
+  height: 40px;
+  line-height: 30px;
+  font-weight: 700;
+  box-sizing: content-box;
+}
+
+#addItem .selects div {
+  position: relative;
+  width: 200px;
+  border: 2px solid #ddd;
+  height: 30px;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+#addItem .selects div::after {
+  top: 40%;
+  right: 10px;
+  position: absolute;
+  content: '';
+  border: 7px solid transparent;
+  border-top-color: #000;
+  transform-origin: center 3px;
+  transition: all .5s;
+}
+
+#addItem .selects div.active::after {
+  transform: rotate(180deg);
+}
+
+#addItem .selects cite {
+  height: 30px;
+  line-height: 30px;
+  font-style: normal;
+  padding-left: 10px;
+}
+
+#addItem .selects ul {
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  display: none;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+#addItem .selects ul li {
+  margin-bottom: -2px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border: 2px solid #ccc;
+}
+
+#addItem .selects ul li:hover {
+  color: #fff;
+  background-color: #19d;
+}
+
+#addItem .selects td:nth-child(odd) {
+  text-align: right;
+  padding-right: 0;
+}
+
+#addItem td {
+  padding: 20px;
+}
+
+#addItem tr:nth-child(-n+3) td {
+  border-bottom: 1px dashed #ccc;
+}
+
+#addItem td:first-child {
+  text-align: right;
+  padding-right: 0px;
+  font-weight: 700;
+}
+
+#addItem textarea {
+  font-size: 16px;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+#addItem .options ul {
+  margin-bottom: 20px;
+}
+
+#addItem .options li {
+  padding: 5px 0;
+}
+
+#addItem .options label {
+  display: inline-block;
+  width: 40px;
+  padding: 0 20px 0 10px;
+}
+
+#addItem .options [type=text] {
+  width: 500px;
+}
+
+#addItem .options img {
+  width: 15px;
+}
+
+#addItem .options a {
+  color: #2237be;
+  cursor: pointer;
+}
+
+#addItem .submit td {
+  text-align: center;
+}
+
+#addItem .submit button {
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #5971de;
+  border-radius: 5px;
+}
