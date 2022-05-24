@@ -19,14 +19,33 @@ body {
 }
 
 #aside dl {
-  text-indent: 30px;
+  text-indent: 40px;
   cursor: pointer;
+}
+
+#aside dl:nth-child(1) dt {
+  background-image: url(../images/user.png);
+}
+
+#aside dl:nth-child(2) dt {
+  background-image: url(../images/magnifying.png);
+}
+
+#aside dl:nth-child(3) dt {
+  background-image: url(../images/movie.png);
+}
+
+#aside dl:nth-child(4) dt {
+  background-image: url(../images/camera.png);
 }
 
 #aside dt {
   height: 50px;
   line-height: 50px;
   color: #999;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 25px !important;
 }
 
 #aside dt.active {
@@ -35,7 +54,7 @@ body {
 }
 
 #aside dd {
-  text-indent: 40px;
+  text-indent: 50px;
   display: none;
   color: #ccc;
   height: 40px;
